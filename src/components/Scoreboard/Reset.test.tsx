@@ -16,7 +16,6 @@ describe("Reset button test", () => {
     expect(onReset).toBeCalled();
   });
   it("Should change state when onMouseDown and onMouseUp events happened", () => {
-    
     render(<ResetWithDummyHandlerOnReset />);
     fireEvent.mouseDown(screen.getByText("🙂"));
     expect(screen.getByText("😯")).toBeInTheDocument();
@@ -24,7 +23,6 @@ describe("Reset button test", () => {
     expect(screen.getByText("🙂")).toBeInTheDocument();
   });
   it("Should change state when onMouseDown and onMouseLeave events happened", () => {
-    
     render(<ResetWithDummyHandlerOnReset />);
     fireEvent.mouseDown(screen.getByText("🙂"));
     expect(screen.getByText("😯")).toBeInTheDocument();

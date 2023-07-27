@@ -5,8 +5,8 @@ export const Cell: FC = () => {
 };
 
 interface ClosedFrameProps {
-    mouseDown?: boolean;
-  }
+  mouseDown?: boolean;
+}
 
 export const ClosedFrame = styled.div<ClosedFrameProps>`
   display: flex;
@@ -20,7 +20,7 @@ export const ClosedFrame = styled.div<ClosedFrameProps>`
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
   border-color: ${({ mouseDown = false }) =>
-    mouseDown ? 'transparent' : 'white #9e9e9e #9e9e9e white'};
+    mouseDown ? "transparent" : "white #9e9e9e #9e9e9e white"};
   &:hover {
     filter: brightness(1.1);
   }
